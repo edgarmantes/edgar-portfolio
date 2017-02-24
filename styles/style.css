@@ -1,0 +1,47 @@
+html, body {
+	height: 100vh;
+}
+
+header {
+	background-color: #ffe6f2;
+	height: 10%;
+}
+
+.contact-icons {
+	background-color: blue;
+	display: inline-block;
+	float: right;
+}
+
+main {
+	background-color: #80ffff;
+	height: 85%;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.nav-hover {
+	background-color: rgba(13, 17, 255, 0.1);
+	position: relative;
+	float: right;
+	width: 250px;
+	height: 100%;	
+}
+
+.nav-container {
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 225px;
+	float: right;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0
+}
+
+.aside-nav {
+	position: absolute;
+	background-color: black;
+	color: white;
+	width: 225px;
+	height: 100%;
+}
