@@ -1,5 +1,13 @@
+/*font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Play', sans-serif;
+font-family: 'Arsenal', sans-serif;
+font-family: 'Varela', sans-serif;*/
+
+
 html, body {
 	height: 100vh;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 a:link, a:visited {
@@ -81,7 +89,7 @@ Nav
 
 
 .nav-container {
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.4);
 	z-index: -1
 	width: 250px;
 	position: absolute;
@@ -120,6 +128,7 @@ Nav
 	position: absolute;
 	left: -25px;
 	width: 100%;
+	font-family: 'Arsenal', sans-serif;
 }
 
 .nav-list > li {
@@ -150,25 +159,42 @@ About Me page
 }
 
 .about-container {
-	background: url(../images/first.png);
+	background: url(../images/second.png);
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-color: red;
-	background-color: rgba(255, 102, 255, 0.5);
-	background-color: #80ffff;
+	background-color: rgba(255, 255, 255, 0.5);
+	background-position: right 0px bottom 0px;
+}
+
+.filter {
+	background-color: rgba(166, 166, 166, 0.1);
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 2px 2px 11px #8c8c8c;
+}
+
+.about-par {
+	line-height: 30px;
 }
 
 .description {
     position: absolute;
     left: 10%;
     top: 33%;
-    width: 400px;
-    color: white;
+    width: 30%;
+    opacity: 0;
+    transform: translate(530px, 0px);
+    transition: 1s transform;
+}
+
+.description:hover {
+	transform: none;
 }
 
 .desc-header {
 	margin: 10px 0;
-
+	font-size: xx-large;
 }
 
 .about-img {
@@ -190,17 +216,18 @@ Projects page
 	background-color: rgba(255, 102, 255, 0.5)
 }
 
-.project-list {
+div.project-list {
 	width: 70%;
 	height: 60%;
 	margin: 0 15%;
 	padding-top: 15vw;
 	text-align: center;
+	vertical-align: top;
 }
 
 .project-wrapper {
 	display: inline-block;
-	width: 15%;
+
 	color: white;
 	padding: 0 2%;
 }
@@ -208,6 +235,18 @@ Projects page
 
 .img-proj {
 		width: 70%;
+}
+
+.img-scrum {
+	margin-bottom: 42px;
+}
+
+.map {
+	margin-bottom: 56px;
+}
+
+.project-label {
+	color: white;
 }
 
 /**********
@@ -219,8 +258,13 @@ Contact page
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: red;
-	opacity: 0.6;
+}
 
+.contact-filter {
+	background-color: rgba(255, 255, 255, 0.1);
+    z-index: 2;
+    width: 100%;
+    height: 100%;
 }
 
 .contacts {
@@ -244,10 +288,10 @@ Contact page
 }
 
 .contact-img {
-	background-color: lightgray;
-	padding: 20px;
-	border-radius: 100%;
-	margin-bottom: 5px;
+    background-color: lightgray;
+    padding: 20px;
+    border: 2px solid #fff;
+    margin-bottom: 18px;
 }
 
 .contact-desc {
@@ -256,4 +300,8 @@ Contact page
 
 .cont {
 	margin: 15px;
+}
+
+.email {
+	margin-left: -44px; /*needed to center the email that overflows the div*/
 }

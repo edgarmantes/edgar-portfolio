@@ -4,7 +4,9 @@
 	<title>Edgar Mantes</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/normalized.css">
+	<link rel="stylesheet" type="text/css" href="css/grid.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Arsenal|Play|Roboto|Source+Sans+Pro|Varela" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
@@ -34,57 +36,62 @@
 		</div>
 
 		<div class="about-container hidden">
-			<div class="description about-desc">
-				<h2 class="desc-header">About Me</h2>
-				<p>Lorem ipsum dolor sit amet, pellentesque velit, sodales sed dictum nam, sapien ut ridiculus nulla arcu. Sed eros ut erat a, praesent lectus nam morbi sit ut non, venenatis nec pharetra, mauris enim faucibus morbi luctus. Inceptos auctor nulla eget mus, ultricies turpis molestie in, elementum nisl donec eu eros vehicula odio, mauris venenatis blandit, ut malesuada sagittis urna nulla. Ipsum consequat orci nulla, esse quam tincidunt mauris litora. Etiam lacus et rutrum vestibulum ac. Consectetuer at vel odio</p>
+			<div class="filter">
+				<div class="description about-desc">
+					<h2 class="desc-header">About Me</h2>
+					<p class="about-par">Lorem ipsum dolor sit amet, pellentesque velit, sodales sed dictum nam, sapien ut ridiculus nulla arcu. Sed eros ut erat a, praesent lectus nam morbi sit ut non, venenatis nec pharetra, mauris enim faucibus morbi luctus. Inceptos auctor nulla eget mus, ultricies turpis molestie in, elementum nisl donec eu eros vehicula odio, mauris venenatis blandit, ut malesuada sagittis urna nulla. Ipsum consequat orci nulla, esse quam tincidunt mauris litora. Etiam lacus et rutrum vestibulum ac. Consectetuer at vel odio</p>
+				</div>
+				<!-- <img class="about-img" src="#"> -->
 			</div>
-			<!-- <img class="about-img" src="#"> -->
 		</div>
 
 		<div class="project-container hidden">
-			<div class="project-list project-desc">
-				<div class="project-wrapper project-desc scrum">
-					<img class="img-proj" src="./images/scrum.png">
+			<!-- <div class="project-label"><h1>[Projects]</h1></div> -->
+			<div class="project-list row">
+				<div class="project-wrapper project-desc scrum col-3">
+					<img class="img-proj img-scrum" src="./images/scrum.png">
 					<p>Get organized and be more productive using the Scrum-mage app. Get to work on this Scrum framework.</p>
 				</div>
-				<div class="project-wrapper project-desc beer">
-					<img class="img-proj" src="./images/pub_beer-512.png">
+				<div class="project-wrapper project-desc beer col-3">
+					<img class="img-proj map" src="./images/pub_beer-512.png">
 					<p>Check out the breweries around you and your friends. Don't miss out on one sip</p>
 				</div>
-				<div class="project-wrapper project-desc timer">
-					<img class="img-proj" src="./images/TimeTracker.png">
+				<div class="project-wrapper project-desc timer col-3">
+					<img class="img-proj img-timer" src="./images/TimeTracker.png">
 					<p>Track how long it takes for you to complete your project work flow. No more guessing, track your time using this app</p>
 				</div>
-				<div class="project-wrapper project-desc log">
-					<img class="img-proj" src="./images/logroom.png">
+				<div class="project-wrapper project-desc log col-3">
+					<img class="img-proj img-log" src="./images/logroom.png">
 					<p>Get your team organized and keep the communcation clear within the team. LogRoom will help you do exactly that.</p>
 				</div>
 			</div>
 		</div>
 
 		<div class="contact-container hidden">
-			<div class="contact-wrapper contact-desc">
-				<div class="contacts">
-					<h1 class="contact-header"> Contact Me </h1>
-					<div class="contact-type">
-						<img  class="contact-img" src="./images/mobile-phone-8-32.png"> 
-						<div class="contact-desc">
-							<h3 class="cont">phone</h3>
-							<p class="cont">312.937.1641</p>
+			<div class="contact-filter">
+				<div class="contact-wrapper contact-desc">
+					<div class="contacts">
+						<h1 class="contact-header"> Contact Me </h1>
+						<div class="contact-type">
+							<img  class="contact-img" src="./images/mobile-phone-8-32.png"> 
+							<div class="contact-desc">
+								<h3 class="cont">phone</h3>
+								<p class="cont">312.937.1641</p>
+							</div>
 						</div>
-					</div>
-					<div class="contact-type">
-						<img class="contact-img" src="./images/email-10-32.png">
-						<div class="contact-desc">
-							<h3 class="cont">email</h3>
-							<p class="cont">edgar.mantes11@gmail.com</p>
+						<div class="contact-type">
+							<img class="contact-img" src="./images/email-10-32.png">
+							<div class="contact-desc">
+								<h3 class="cont">email</h3>
+								<p class="cont email">edgar.mantes11@gmail.com</p>
+							</div>
 						</div>
-					</div>
-					<div class="contact-type">
-						<img class="contact-img" src="./images/skype-32.png">
-						<div class="contact-desc">					
-							<h3 class="cont">Skype</h3>
-							<p class="cont">Call me</p>
+						<div class="contact-type">
+							<img class="contact-img" src="./images/skype-32.png">
+							<div class="contact-desc">					
+								<h3 class="cont">Skype</h3>
+								<p class="cont">Call me</p>
+							</div>
 						</div>
 					</div>
 				</div>

@@ -10,7 +10,7 @@ $('#about').click(function(e){
 	$('#about').css ('background-color', 'black')
 	projects.classList.remove('hidden')
 	projects.classList.add('hidden')
-	$('.projects-desc').fadeOut(1)
+	$('.project-wrapper').fadeOut(1)
 	$('#projects').css ('background-color', 'rgba(0,0,0,0.0')
 	contacts.classList.remove('hidden');
 	contacts.classList.add('hidden')
@@ -20,8 +20,21 @@ $('#about').click(function(e){
 
 $('#projects').click(function(e){
 	e.preventDefault();
+	$('.project-wrapper').hide();
 	projects.classList.remove('hidden')
-	$('.projects-desc').fadeIn(1000)
+	setTimeout(function(){
+		$('.scrum').fadeIn(2000)
+	},100);
+	setTimeout(function(){
+		$('.beer').fadeIn(2000)
+	},600);
+	setTimeout(function(){
+		$('.timer').fadeIn(2000)
+	},1000);
+	setTimeout(function(){
+		$('.log').fadeIn(2000)
+	},1500);
+
 	$('#projects').css ('background-color', 'black')
 	about.classList.remove('hidden')
 	about.classList.add('hidden')
@@ -40,7 +53,7 @@ $('#contacts').click(function(e){
 	$('#contacts').css ('background-color', 'black')
 	projects.classList.remove('hidden')
 	projects.classList.add('hidden')
-	$('.projects-desc').fadeOut(1)
+	$('.project-wrapper').fadeOut(1)
 	$('#projects').css ('background-color', 'rgba(0,0,0,0.0')
 	about.classList.remove('hidden');
 	about.classList.add('hidden')
@@ -50,13 +63,15 @@ $('#contacts').click(function(e){
 
 
 $(document).ready(function(){
-	$('.about-desc').fadeOut(1)
 	about.classList.remove('hidden');
-	$('.about-desc').css('opacity', 0).slideDown('slow').animate({ opacity: 1 },{ queue: false, duration: 'slow' });
+	setTimeout(function(){
+		$('.about-desc').css({'transform': 'none'}).animate({ opacity: 1 },{ queue: false, duration: 2000 });
+	}, 500);
+
 	$('#about').css ('background-color', 'black');
 	projects.classList.remove('hidden');
 	projects.classList.add('hidden');
-	$('.projects-desc').fadeOut(1);
+	$('.project-wrapper').fadeOut(1);
 	$('#projects').css ('background-color', 'rgba(0,0,0,0.0');
 	contacts.classList.remove('hidden');
 	contacts.classList.add('hidden');
