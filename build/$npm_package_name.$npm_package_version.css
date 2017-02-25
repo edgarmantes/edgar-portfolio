@@ -1,0 +1,169 @@
+html,
+body {
+  height: 100vh;
+}
+.about-container,
+.project-container,
+.contact-container {
+  width: 100%;
+  height: 100%;
+}
+/**********
+Header
+**********/
+header {
+  position: relative;
+  height: 8%;
+}
+.edgar-icon {
+  position: absolute;
+  bottom: 0;
+  left: 16%;
+}
+main {
+  height: 85%;
+  width: 90%;
+  margin: 0 auto;
+}
+.contact-email {
+  position: absolute;
+  bottom: 1px;
+  right: 20%;
+}
+.contact-linkedin {
+  position: absolute;
+  bottom: 1px;
+  right: 10%;
+}
+/**********
+Nav
+**********/
+.nav-hover {
+  position: relative;
+  float: right;
+  width: 250px;
+  height: 100%;
+  overflow: hidden;
+}
+.nav-hover :hover .nav-container {
+  position: absolute;
+  right: 0;
+}
+.nav-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 250px;
+  position: absolute;
+  right: -225px;
+  top: 0;
+  bottom: 0;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+.aside-nav {
+  position: absolute;
+  background-color: black;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 225px;
+  z-index: 2;
+}
+/*.nav-hover:hover .nav-container {
+	position: absolute;
+	right: 0;
+}*/
+.nav-list {
+  margin-top: 100%;
+  position: absolute;
+  left: -25px;
+  width: 100%;
+}
+.nav-list > li {
+  margin: 20px 0;
+  padding: 5px;
+}
+li:hover {
+  background-color: black;
+}
+/**********
+About Me page
+**********/
+.hidden {
+  display: none;
+}
+.about-container {
+  background-color: #80ffff;
+}
+.description {
+  position: absolute;
+  left: 10%;
+  top: 33%;
+  width: 400px;
+}
+.desc-header {
+  margin: 10px 0;
+}
+.about-img {
+  position: absolute;
+  right: 10%;
+  top: 30%;
+}
+/**********
+Projects page
+**********/
+.project-container {
+  background-color: rgba(255, 102, 255, 0.5);
+}
+.project-list {
+  width: 50%;
+  height: 60%;
+  margin: 0 25%;
+  padding-top: 15%;
+  text-align: center;
+}
+.project-wrapper {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 44%;
+  margin: 10px;
+  height: 24%;
+}
+/**********
+Contact page
+**********/
+.contact-container {
+  background-color: red;
+}
+.contacts {
+  text-align: center;
+  position: absolute;
+  top: 27%;
+  left: 20%;
+  width: 60%;
+}
+.contact-header {
+  margin-bottom: 50px;
+}
+.contact-type {
+  display: inline-block;
+  width: 100px;
+  color: white;
+  margin: 0 44px;
+}
+.contact-img {
+  background-color: lightgray;
+  padding: 20px;
+  border-radius: 100%;
+  margin-bottom: 5px;
+}
+.contact-desc {
+  border-top: 1px solid white;
+}
+.cont {
+  margin: 15px;
+}
+/*# sourceMappingURL=$npm_package_name.$npm_package_version.css.map */
