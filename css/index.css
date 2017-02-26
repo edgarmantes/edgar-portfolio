@@ -59,7 +59,7 @@ main {
 
 .contact-email {
 	position: absolute;
-	bottom: 1px;
+	bottom: 4px;
 	right: 20%;
 }
 
@@ -145,7 +145,8 @@ li:hover {
 
 .nav-list > .side-icon {
 	font-size: 30px;
-	padding-left: 30px;
+	padding-left: 45px;
+	color: #0000ff;
 }
 
 .nav-list > .side-icon:hover {
@@ -254,36 +255,6 @@ div.project-list {
 	color: white;
 }
 
-/*overlay*/
-/*body {
-	font-family: sans-serif;
-	background: #384047;
-}
-h1 {
-	color: #fff;
-	text-align: center
-}
-
-ul {
-	list-style:none;
-	margin: 0 auto;
-	padding: 0;
-	display: block;
-	max-width: 780px;
-	text-align: center;
-}
-ul li {
-	display: inline-block;
-	padding: 8px;
-	background:white;
-	margin:10px;
-}
-ul li img {
-	display: block;
-}
-a {
-	text-decoration: none;
-}*/
 
 #overlay {
   background:rgba(0,0,0,0.7);
@@ -336,6 +307,7 @@ Contact page
 
 .contact-header {
 	margin-bottom: 50px;
+	font-size: 3rem;
 }
 
 .contact-type {
