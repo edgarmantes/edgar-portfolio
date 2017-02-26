@@ -255,6 +255,10 @@ div.project-list {
 	color: white;
 }
 
+.proj-desc {
+	line-height: 30px;
+}
+
 
 #overlay {
   background:rgba(0,0,0,0.7);
