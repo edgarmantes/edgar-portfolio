@@ -2,6 +2,18 @@ var about = document.getElementsByClassName('about-container')[0];
 var projects = document.getElementsByClassName('project-container')[0];
 var contacts = document.getElementsByClassName('contact-container')[0];
 
+// Functions for overlay
+var $overlay = $('<div id="overlay"></div>');
+var $image = $("<img>");
+var $caption = $("<p></p>");
+
+$overlay.append($image); //An image to overlay
+
+$overlay.append($caption); //A caption to overlay
+
+$("body").append($overlay); //Add overlay
+
+
 
 $('#about').click(function(e){
 	e.preventDefault();
@@ -62,7 +74,10 @@ $('#contacts').click(function(e){
 });
 
 
+
 $(document).ready(function(){
+
+
 	about.classList.remove('hidden');
 	setTimeout(function(){
 		$('.about-desc').css({'transform': 'none'}).animate({ opacity: 1 },{ queue: false, duration: 2000 });
@@ -77,4 +92,26 @@ $(document).ready(function(){
 	contacts.classList.add('hidden');
 	$('.contact-desc').fadeOut(1);
 	$('#contacts').css ('background-color', 'rgba(0,0,0,0.0');
+
+
+	/*Overlay flashlight*/	
+	$(".project-list a").click(function(event){ //Capture the click event on a link to an image
+	  event.preventDefault();
+	  var imageLocation = $(this).attr("href");
+	 
+	  $image.attr("src", imageLocation); //Update overlay with the image linked in the link
+	  	  
+	  $overlay.show(); //Show the overlay.
+	  
+	  var captionText = $(this).children("img").attr("alt"); //Get child's alt attribute and set caption
+	  $caption.text(captionText);
+	});
+
+	
+	$overlay.click(function(){ //When overlay is clicked
+	  
+	  $overlay.hide(); //Hide the overlay
+	});
+	/* end - Overlay flashlight*/
+
 })
