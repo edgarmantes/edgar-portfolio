@@ -48,6 +48,7 @@ header {
 	
 
 main {
+	position: relative;
 	height: 85%;
 	width: 90%;
 	margin: 0 auto;
@@ -56,12 +57,12 @@ main {
 .contact-email {
 	position: absolute;
 	bottom: 4px;
-	right: 20%;
+	right: 13%;
 }
 
 .contact-linkedin {
 	position: absolute;
-	bottom: 4px;
+	bottom: 5px;
 	right: 10%;
 }
 
@@ -70,14 +71,13 @@ Nav
 **********/
 
 .nav-hover {
-	position: fixed;
-	right: 103px;
-	top: 8%;
-	width: 250px;
-	height: 85%;
-	overflow: hidden;	
-	z-index: 10;
-
+    position: absolute;
+    right: 0px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    overflow: hidden;
+    z-index: 10;
 }
 
 .nav-margin {
@@ -137,15 +137,25 @@ Nav
 	font-family: 'Arsenal', sans-serif;
 }
 
+#about:hover,
+#projects:hover,
+#contacts:hover {
+	background-position: right bottom;
+}
+
 .nav-list > li {
 	margin: 30px 0;
 	padding: 5px;
 	font-size: 20px;
+	background: linear-gradient(to left, black 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    transition:all .2s ease;
 }
 
-li:hover {
-	background-color: black;
-}
+/*.nav-list > li:hover {
+	background-position: right bottom;
+}*/
 
 
 .nav-list > .side-icon {
@@ -156,9 +166,6 @@ li:hover {
 	background-color: white;
 }
 
-.nav-list > .side-icon:hover {
-	background-color: rgba(0,0,0,0);
-}
 
 
 /**********
