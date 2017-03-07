@@ -197,7 +197,7 @@ if (mobile.matches) {
 			function(){
 				var navMove = $('.nav-container')
 
-				TweenLite.to(navMove, 2.5, { ease: Bounce.easeOut, x: -215 });
+				TweenLite.to(navMove, 2.5, { ease: Power4.easeOut, x: -215 });
 			},
 
 			function(){
