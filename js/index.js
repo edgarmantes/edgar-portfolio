@@ -118,6 +118,10 @@ if (mobile.matches) {
 		// Listener when you click on the 'about' link 
 		$('#about').click(function(e){
 			e.preventDefault();
+
+				var navMove = $('.nav-container')
+				TweenLite.to(navMove, 2.5, { ease: Power4.easeOut, x: 0 });
+
 			$('.project-container').fadeOut(500)
 			$('.contact-container').fadeOut(500)
 			// about.classList.remove('hidden')
@@ -138,6 +142,10 @@ if (mobile.matches) {
 		// Listener when you click on the 'projects' link
 		$('#projects').click(function(e){
 			e.preventDefault();
+
+				var navMove = $('.nav-container')
+				TweenLite.to(navMove, 2.5, { ease: Power4.easeOut, x: 0 });
+
 			$('.about-container').fadeOut(500)
 			$('.contact-container').fadeOut(500)
 
@@ -171,6 +179,10 @@ if (mobile.matches) {
 		// Listener when you click on the 'contacts' link
 		$('#contacts').click(function(e){
 			e.preventDefault();
+
+				var navMove = $('.nav-container')
+				TweenLite.to(navMove, 2.5, { ease: Power4.easeOut, x: 0 });
+
 			$('.about-container').fadeOut(500)
 			$('.project-container').fadeOut(500)
 			
@@ -189,6 +201,11 @@ if (mobile.matches) {
 				$('#about').css ('background-color', 'rgba(0,0,0,0.0')
 			},500);
 		});
+
+		$('.menu-btn').on('click', function(){
+			var navMove = $('.nav-container')
+			TweenLite.to(navMove, 2.5, { ease: Power4.easeOut, x: -215 });
+		})
 
 
 
