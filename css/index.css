@@ -331,10 +331,12 @@ div.project-list {
 
 .flip3D:hover > .front {
 	transform: perspective( 600px ) rotateY( -180deg );
+	cursor: pointer;
 }
 
 .flip3D:hover > .back {
 	transform: perspective( 600px ) rotateY( 0deg );
+	cursor: pointer;
 }
 
 /*end - flip*/
