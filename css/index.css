@@ -52,6 +52,7 @@ main {
 	height: 85%;
 	width: 90%;
 	margin: 0 auto;
+	overflow: hidden;
 }
 
 .contact-email {
@@ -64,6 +65,12 @@ main {
 	position: absolute;
 	bottom: 5px;
 	right: 10%;
+}
+
+.contact-github {
+	position: absolute;
+    bottom: 4px;
+    right: 7%;
 }
 
 /**********
@@ -94,11 +101,6 @@ Nav
 	top: 0;
 	bottom: 0;
 	color: white;
-/*	transition: all .3s ease-in-out;
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-ms-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;*/
 }
 
 .aside-nav {
@@ -111,10 +113,6 @@ Nav
 	z-index: 2;
 }
 
-.nav-hover:hover .nav-container {
-/*	position: absolute;
-	right: 0;*/
-}
 
 @keyframes nav-slide {
     0%	{right: -218;}
@@ -141,6 +139,7 @@ Nav
 #projects:hover,
 #contacts:hover {
 	background-position: right bottom;
+	color: rgb(7,36,159);
 }
 
 .nav-list > li {
@@ -153,10 +152,9 @@ Nav
     transition:all .2s ease;
 }
 
-/*.nav-list > li:hover {
-	background-position: right bottom;
-}*/
-
+.nav-list > li:hover {
+	color: rgb(7,36,159);
+}
 
 .nav-list > .side-icon {
 	font-size: 30px;
@@ -197,7 +195,7 @@ About Me page
 
 .description {
     position: absolute;
-    left: 10%;
+    left: 6%;
     top: 33%;
     width: 30%;
     opacity: 0;
@@ -226,7 +224,7 @@ Projects page
 **********/
 
 .project-container {
-	background: url(../images/wood.jpg);
+	background: url(../images/wood2.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: red;
@@ -249,8 +247,9 @@ div.project-list {
 .project-wrapper {
 	display: inline-block;
 	height: 200px;
-	color: white;
+	color: rgb(0,0,0);
 	padding: 0 2%;
+	font-weight: bolder;
 }
 
 .img-proj {
@@ -271,8 +270,9 @@ div.project-list {
 }
 
 .proj-desc {
-	margin-top: 50px;
 	line-height: 30px;
+    height: 160px;
+    padding: 14px;
 }
 
 
@@ -326,14 +326,17 @@ div.project-list {
 	transform: perspective( 600px ) rotateY( 180deg );
 	backface-visibility: hidden;
 	transition: transform .5s linear 0s;
+	background-color: rgba(255,255,255, 0.3)
 }
 
 .flip3D:hover > .front {
 	transform: perspective( 600px ) rotateY( -180deg );
+	cursor: pointer;
 }
 
 .flip3D:hover > .back {
 	transform: perspective( 600px ) rotateY( 0deg );
+	cursor: pointer;
 }
 
 /*end - flip*/
@@ -347,32 +350,33 @@ div.project-list {
 .proj-btn {
 	display: inline-block;
 	margin: 0 auto;
-	border: 1px solid white;
+	border: 1px solid black;
 	border-radius: 5px;
+	height: 32px;
 }
 
 .btn-gh {
-	border-right: 1px solid white;
-	background-image: url(../images/github.png);
+	border-right: 1px solid black;
+	background-image: url(../images/github2.png);
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-.btn-info {
-	background-image: url(../images/info.png);
+/*.btn-info {
+	background-image: url(../images/info2.png);
 	background-repeat: no-repeat;
 	background-position: center;
-}
+}*/
 
 .btn-gif {
-	border-right: 1px solid white;
-	background-image: url(../images/view.png);
+	border-right: 1px solid black;
+	background-image: url(../images/view2.png);
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 .btn-web {
-	background-image: url(../images/web.png);
+	background-image: url(../images/web2.png);
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -381,54 +385,58 @@ div.project-list {
 Contact page
 **********/
 
-.contact-container {
-	background: url(../images/chi-sky1.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-color: red;
+.contact-container{
+    background: url(../images/chisky.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: bottom;
+
 }
 
+
 .contact-filter {
-	background-color: rgba(255, 0, 0, 0.2);
     z-index: 2;
     width: 100%;
     height: 100%;
+    box-shadow: inset 0px 0px 6px rgba(0,0,0,0.2);
+    background: -webkit-linear-gradient(rgba(255,255,255,1),rgba(255,256,255,1),rgba(255,255,255,1), rgba(255,255,255,0.9),rgba(255,255,255,0.8),rgba(255,255,255,0.5),rgba(255,255,255,0.1), transparent);
+    background: -o-linear-gradient(rgba(255,255,255,1),rgba(255,256,255,1),rgba(255,255,255,1), rgba(255,255,255,0.9),rgba(255,255,255,0.8),rgba(255,255,255,0.5),rgba(255,255,255,0.1), transparent);
+    background: -moz-linear-gradient(rgba(255,255,255,1),rgba(255,256,255,1),rgba(255,255,255,1), rgba(255,255,255,0.9),rgba(255,255,255,0.8),rgba(255,255,255,0.5),rgba(255,255,255,0.1), transparent);
+    background: linear-gradient(rgba(255,255,255,1),rgba(255,256,255,1),rgba(255,255,255,1), rgba(255,255,255,0.9),rgba(255,255,255,0.8),rgba(255,255,255,0.5),rgba(255,255,255,0.1), transparent);
 }
 
 .contacts {
-	text-align: center;
-	position: absolute;
-	top: 27%;
-	left: 20%;
-	width: 60%;
-	z-index: 2;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    z-index: 2;
 }
 
 .contact-header {
-	margin-bottom: 50px;
+	margin-bottom: 60px;
 	font-size: 3rem;
 }
 
 .contact-type {
 	display: inline-block;
 	width: 100px;
-	color: white;
+	color: rgb(7, 36, 159);
 	margin: 0 44px;
 }
 
 .contact-img {
-    background-color: lightgray;
     padding: 20px;
-    border: 2px solid #fff;
-    margin-bottom: 18px;
+    width: 85px;
 }
 
 .contact-desc {
-	border-top: 1px solid white;
+	border-top: 1px solid rgb(7,36,159);
 }
 
 .cont {
-	margin: 15px;
+	margin: 10px;
 }
 
 .email {
@@ -436,7 +444,97 @@ Contact page
 }
 
 
+@media only screen and (max-width: 1100px) {
+	
+	/*header*/
+	.contact-email {
+		right: 16%;
+	}
+
+	.contact-linkedin {
+		right: 11.5%;
+	}
+
+	/*Nav */
+	.menu-btn {
+    display: inline-block;
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    right: 12px;
+    top: 12px;
+    background-color: rgba(255,255,255,0.2);
+    background-image: url(../images/menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+	}
+
+	.nav-hover {
+		width: 145px;
+	}
+
+	.nav-container {
+		width: 149px;
+	}
+
+	.aside-nav {
+		width: 116px;
+	}
+
+	.nav-list > li {
+		font-size: unset;
+		padding: 5px 8px;
+	}
+
+	/*About Page*/
+	.description {
+		top: 10%;
+	}
+
+
+
+	/*Projects Page*/
+	.pro {
+		width: 40px;
+	}
+
+	.proj-desc {
+		margin-top: 0;
+		line-height: 17px;
+		font-size: 12px;
+	}
+
+	.flip3D {
+		height: 83%;
+	}
+
+	div.project-list {
+		padding-top: 21vw;
+	}
+
+	.img-proj {
+		padding-top: 30px;
+	}
+
+	/*Contacts Page*/
+	.contact-filter {
+	    z-index: 2;
+	    width: 100%;
+	    height: 100%;
+	    background: -webkit-linear-gradient(rgba(255,255,255,1),rgba(255,256,255,1),rgba(255,255,255,1), rgba(255,255,255,1),rgba(255,255,255,1),rgba(255,255,255,0.6),rgba(255,255,255,0.2), transparent);
+	    background: -o-linear-gradient(rgba(255,255,255,1),rgba(255,256,255,1),rgba(255,255,255,1), rgba(255,255,255,1),rgba(255,255,255,1),rgba(255,255,255,0.6),rgba(255,255,255,0.2), transparent);
+	    background: -moz-linear-gradient(rgba(255,255,255,1),rgba(255,256,255,1),rgba(255,255,255,1), rgba(255,255,255,1),rgba(255,255,255,1),rgba(255,255,255,0.6),rgba(255,255,255,0.2), transparent);
+	    background: linear-gradient(rgba(255,255,255,1),rgba(255,256,255,1),rgba(255,255,255,1), rgba(255,255,255,1),rgba(255,255,255,1),rgba(255,255,255,0.6),rgba(255,255,255,0.2), transparent);
+	}
+
+}
+
+
 @media only screen and (max-width: 1000px) {
+
+	.menu-btn {
+		display: none;
+	}
 	
 	header {
 		display: none;
@@ -475,6 +573,7 @@ Contact page
 
 	.aside-nav {
 		width: 100%;
+		overflow: scroll;
 	}
 
 	.nav-list {
@@ -506,6 +605,7 @@ Contact page
 		background-image: url(../images/mobile-edgar.png);
 		background-repeat: no-repeat;
 		background-position: center;
+		background-size: 80%;
 	}
 
 	/*About Page*/
@@ -514,6 +614,7 @@ Contact page
 		background-image: url(../images/mobile-back.png);
 		background-repeat: no-repeat;
 		background-size: cover;
+		overflow: scroll;
 	}
 
 	.about-desc {
@@ -555,7 +656,6 @@ Contact page
 
 	.proj-header {
 		display: block;
-		color: white;
 		height: 55%;
 	}
 
@@ -564,8 +664,13 @@ Contact page
 	}
 
 	.projects {
-		margin-top: 104%;
+		margin-top: 30vh;
 		font-size: 150px;
+	}
+
+	.proj-btn {
+		height: 100px;
+		margin: 90px auto;
 	}
 
 	.arrow-down {
@@ -593,6 +698,11 @@ Contact page
 	#overlay img {
 	    margin-top: 25%;
 	    min-width: 80%;
+	}
+
+	.flip3D > .back {
+		background-color: transparent;
+		color: rgb(7,36,159);
 	}
 
 
@@ -660,12 +770,24 @@ Contact page
 		height: 100px;
 	}
 
+	.contact-container {
+		overflow: scroll;
+	}
+
 	.contact-filter {
-		background-color: rgba(0,0,255,0.3);
+		background: -webkit-linear-gradient(rgba(255,255,255,1),rgba(255,256,255,1),rgba(255,255,255,1), rgba(255,255,255,1),rgba(255,255,255,1),rgba(255,255,255,1.0),rgba(255,255,255,0.9), transparent);
+	    background: -o-linear-gradient(rgba(255,255,255,1),rgba(255,256,255,1),rgba(255,255,255,1), rgba(255,255,255,1),rgba(255,255,255,1),rgba(255,255,255,1.0),rgba(255,255,255,0.9), transparent);
+	    background: -moz-linear-gradient(rgba(255,255,255,1),rgba(255,256,255,1),rgba(255,255,255,1), rgba(255,255,255,1),rgba(255,255,255,1),rgba(255,255,255,1.0),rgba(255,255,255,0.9), transparent);
+	    background: linear-gradient(rgba(255,255,255,1),rgba(255,256,255,1),rgba(255,255,255,1), rgba(255,255,255,1),rgba(255,255,255,1),rgba(255,255,255,1.0),rgba(255,255,255,0.9), transparent);
+	
 	}
 
 	.contact-header {
 		font-size: 6rem;
+	}
+
+	.contact-desc {
+		border-top: none;
 	}
 
 	.contacts {
@@ -678,7 +800,8 @@ Contact page
 	}
 
 	.contact-img {
-		height: 125px;
+		height: 135px;
+		width: 135px
 	}
 
 	.cont {
