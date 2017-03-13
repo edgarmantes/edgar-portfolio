@@ -286,14 +286,21 @@ div.project-list {
   display:none;
   text-align:center;
   z-index: 10;
+  animation: fadein 1s ease-in-out;
 }
 
 #overlay img {
  margin-top: 10%; 
+ animation: fadein 1s ease-in-out;
 }
 
 #overlay p {
  color:white; 
+}
+
+@keyframes fadein {
+	from { opacity: 0; }
+	to { opacity: 1 }
 }
 
 /* end - overlay*/
