@@ -22,7 +22,7 @@ var $caption = $("<p></p>");
 		 
 		  $image.attr("src", imageLocation); //Update overlay with the image linked in the link
 		  	  
-		  $overlay.show(); //Show the overlay.
+		  $overlay.fadeIn(1000); //Show the overlay.
 		  
 		  var captionText = $(this).children("img").attr("alt"); //Get child's alt attribute and set caption
 		  $caption.text(captionText);
