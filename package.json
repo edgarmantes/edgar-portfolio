@@ -4,22 +4,28 @@
   "description": "Edgar Mantes Portfolio",
   "main": "js/index.js",
   "scripts": {
+    "dev": "node_modules/.bin/webpack-dev-server",
     "mkdir": "mkdir build",
-    "build": "npm run clean && npm run mkdir && npm run build:html && npm run build:css",
+    "build": "npm run clean && npm run mkdir && npm run build:html && npm run build:css && npm run build:js && npm run build:images",
     "watch": "npm run watch:html & npm run watch:css",
     "clean": "rm -rf build",
+    "build:js": "npm run clean:js && cp -R js build/js && npm run build:js:minified",
+    "clean:js": "rm -rf build/js",
+    "build:js:minified": "uglifyjs build/js/index.js -o build/js/index.min.js -c -m -p 5",
+    "build:images": "npm run clean:images && cp -R images build/images",
+    "clean:images": "rm -rf build/images",
     "build:html": "npm run clean:html && cp index.html build/",
     "watch:html": "npm run build:html && chokidar index.html -c 'npm run build:html'",
     "clean:html": "rm -f build/index.html",
     "build:css": "npm run build:css:unminified && npm run build:css:minified",
     "watch:css": "npm run watch:css:unminified & npm run watch:css:minified",
     "clean:css": "npm run clean:css:unminified && npm run clean:css:minified",
-    "build:css:unminified": "npm run clean:css:unminified && lessc --source-map css/index.less build/$npm_package_name.$npm_package_version.css",
+    "build:css:unminified": "npm run clean:css:unminified && lessc --source-map css/index.less build/css/index.css",
     "watch:css:unminified": "npm run build:css:unminified && chokidar 'css/index.less' -c 'npm run build:css:unminified'",
-    "clean:css:unminified": "rm -f build/$npm_package_name.$npm_package_version.css build/$npm_package_name.$npm_package_version.css.map",
-    "build:css:minified": "npm run clean:css:minified && lessc --clean-css --source-map css/index.less build/$npm_package_name.$npm_package_version.min.css",
+    "clean:css:unminified": "rm -f build/css/index.css build/css/index.css.map",
+    "build:css:minified": "npm run clean:css:minified && lessc --clean-css --source-map css/index.less build/css/index.min.css",
     "watch:css:minified": "npm run build:css:minified && chokidar 'css/index.less' -c 'npm run build:css:minified'",
-    "clean:css:minified": "rm -f build/$npm_package_name.$npm_package_version.min.css build/$npm_package_name.$npm_package_version.min.css.map"
+    "clean:css:minified": "rm -f build/css/index.min.css build/css/index.css.map"
   },
   "repository": {
     "type": "git",
@@ -37,8 +43,16 @@
   },
   "homepage": "https://github.com/shootermantes/edgar-portfolio#readme",
   "devDependencies": {
+    "css-loader": "^0.26.2",
     "less": "^2.7.2",
+    "less-loader": "^3.0.0",
     "less-plugin-clean-css": "^1.5.1",
-    "webpack": "^2.2.1"
+    "style-loader": "^0.13.2",
+    "uglify-js": "^2.8.7",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  },
+  "dependencies": {
+    "less": "^2.7.2"
   }
 }
