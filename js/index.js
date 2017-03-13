@@ -31,7 +31,7 @@ var $caption = $("<p></p>");
 
 		$overlay.click(function(){ //When overlay is clicked
 		  
-		  $overlay.hide(); //Hide the overlay
+		  $overlay.fadeOut(1000); //Hide the overlay
 		});
 /* end - Overlay flashlight*/
 
