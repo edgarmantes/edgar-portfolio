@@ -253,16 +253,16 @@ div.project-list {
 }
 
 .img-proj {
-	width: 70%;
+	width: 140px;
 }
 
 
 .img-timer {
-	width: 60%;
+	width: 140px;
 }
 
 .img-log {
-	width: 63%;
+	width: 140px;
 }
 
 .project-label {
@@ -273,6 +273,7 @@ div.project-list {
 	line-height: 30px;
     height: 160px;
     padding: 14px;
+    font-size: 0.7vw;
 }
 
 
@@ -343,7 +344,7 @@ div.project-list {
 
 .pro {
 	display: inline-block;
-	width: 50px;
+	width: 45px;
 	height: 30px;
 }
 
@@ -469,6 +470,19 @@ Contact page
     background-position: center;
 	}
 
+	.img-proj {
+		width: 140px;
+	}
+
+
+	.img-timer {
+		width: 140px;
+	}
+
+	.img-log {
+		width: 140px;
+	}
+
 	.nav-hover {
 		width: 145px;
 	}
@@ -489,6 +503,8 @@ Contact page
 	/*About Page*/
 	.description {
 		top: 10%;
+		opacity: 1;
+		transform: unset;
 	}
 
 
@@ -502,10 +518,6 @@ Contact page
 		margin-top: 0;
 		line-height: 17px;
 		font-size: 12px;
-	}
-
-	.flip3D {
-		height: 83%;
 	}
 
 	div.project-list {
@@ -547,15 +559,14 @@ Contact page
 
 	.nav-hover {
 	    position: fixed;
-	    top: 30px;
-	    right: 30px;
-	    width: 150px;
-	    height: 150px;
+	    top: 10px;
+	    right: 10px;
+	    width: 50px;
+	    height: 50px;
 	    background-color: rgba(255,255,255, 0.5);
 	    background-image: url(../images/menu.png);
 	    background-repeat: no-repeat;
 	    background-position: center;
-	    background-size: 100px;
 	    float: unset;
 	}
 
@@ -585,9 +596,9 @@ Contact page
 	}
 
 	.nav-list > li {
-	    font-size: 50px;
+		font-size: 25px;
 	    margin: 0;
-	    padding: 66px 0;
+	    padding: 25px 0;
 	    border-bottom: 1px solid white;
 	}
 
@@ -596,10 +607,10 @@ Contact page
 	}
 
 	.nav-list > .side-icon {
-		width: 400px;
-		height: 400px;
+		width: 150px;
+		height: 150px;
 		margin: auto;
-		margin-bottom: 90px;
+		margin-bottom: 55px;
 		border-radius: 100%;
 		border: 2px double gray;
 		background-image: url(../images/mobile-edgar.png);
@@ -618,7 +629,7 @@ Contact page
 	}
 
 	.about-desc {
-		position: fixed;
+		position: absolute;
 	    left: 0;
 	    top: 15%;
 	    right: 0;
@@ -626,15 +637,20 @@ Contact page
 	    transform: none;
 	    width: unset;
 	    opacity: 1;
-	    font-size: 50px;
+	    font-size: 20px;
 	    text-align: center;
 	    width: 85%;
 	    margin: 0 auto;
+	    overflow: scroll;
+	}
+
+	::-webkit-scrollbar { 
+	    display: none; 
 	}
 
 	.desc-header {
-		font-size: 75px;
-    	margin-bottom: 30px;
+		font-size: 43px;
+    	margin-bottom: 10px;
 	}
 
 	.about-par {
@@ -643,8 +659,9 @@ Contact page
 
 	.img-me {
 		display: block;
-		margin: 80px auto;
+		margin: 15px auto;
 		border-radius: 100%;
+		width: 160px;
 	}
 
 
@@ -665,12 +682,12 @@ Contact page
 
 	.projects {
 		margin-top: 30vh;
-		font-size: 150px;
+		font-size: 60px;
 	}
 
 	.proj-btn {
-		height: 100px;
-		margin: 90px auto;
+		height: 50px;
+	    margin: 65px auto;
 	}
 
 	.arrow-down {
@@ -679,20 +696,20 @@ Contact page
 	}
 
 	.project-wrapper {
-		margin-top: 125px;
-		margin-bottom: 200px;
-		height: 430px;
+		margin-top: 20px;
+	    margin-bottom: 215px;
+	    height: 180px;
 	}
 
 	.proj-desc {
-		font-size: 50px;
-		line-height: 1.2;
+		font-size: 20px;
+		line-height: 1.5;
 	}
 
 	.pro {
-		background-size: 75px;
-	    height: 100px;
-	    width: 100px;
+	    background-size: 33px;
+	    height: 48px;
+	    width: 65px;
 	}
 
 	#overlay img {
@@ -705,14 +722,20 @@ Contact page
 		color: rgb(7,36,159);
 	}
 
+	.img-proj {
+		width: 165px;
+	}
+
+	.img-log {
+		width: 165px;
+	}
 
 
 	/* arrow bouncing */
 	.arrow {
-		position: fixed;
-		bottom: 0;
-		left: 50%;
-		margin-left:-20px;
+	    position: fixed;
+	    bottom: 0;
+	    left: 40vw;
 	}
 
 	.bounce {
@@ -783,7 +806,8 @@ Contact page
 	}
 
 	.contact-header {
-		font-size: 6rem;
+		font-size: 40px;
+		margin-bottom: 20px;
 	}
 
 	.contact-desc {
@@ -792,19 +816,26 @@ Contact page
 
 	.contacts {
 		top: 13%;
+		overflow: scroll;
+    	height: 100%;
 	}
 
 	.contact-type {
-		width: 100%;
-		margin: 75px 0;
+		width: 75%;
+		/*margin: 75px 0;*/
+	}
+
+	.email {
+		margin-left: unset;
 	}
 
 	.contact-img {
-		height: 135px;
-		width: 135px
+	    width: 40px;
+	    margin-top: 46px;
+	    padding: 0;
 	}
 
 	.cont {
-		font-size: 45px;
+		font-size: 20px;
 	}
 }
