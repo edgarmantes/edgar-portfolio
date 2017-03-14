@@ -87,6 +87,8 @@ if (mobile.matches) {
 		   }
 		});
 
+		$('.aside-nav').hover(function(){return})
+
 
 	});
 
