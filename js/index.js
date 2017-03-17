@@ -45,7 +45,6 @@ if (mobile.matches) {
 	$(document).ready(function(){
 
 		$('.nav-hover').on('click', function(event){	// Opens the nav menu for mobile
-			console.log('menu btn test')
 			event.preventDefault();
 
 			$('.about-container').fadeOut();		// hides about container
@@ -81,7 +80,7 @@ if (mobile.matches) {
 
 		// bouncing hidden, when scroll reaches 10px more than screen height
 		$('.project-container').scroll(function() {
-			console.log($('.project-container').scrollTop() + $(window).height(), $('.project-container').height() + 10)
+
 		   if($('.project-container').scrollTop() + $(window).height() > $('.project-list').height() + 100) {
 		        $('.arrow-down').fadeOut(2000);
 		   } else {
