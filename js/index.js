@@ -2,6 +2,8 @@ var about = document.getElementsByClassName('about-container')[0];
 var projects = document.getElementsByClassName('project-container')[0];
 var contacts = document.getElementsByClassName('contact-container')[0];
 
+
+/*Overlay variables*/ 
 var $overlay = $('<div id="overlay"></div>');
 var $image = $("<img>");
 var $caption = $("<p></p>");
@@ -18,7 +20,7 @@ var $caption = $("<p></p>");
 			
 		$(".project-list a:nth-child(2)").click(function(event){ //Capture the click event on a link to an image
 		  event.preventDefault();
-		  var imageLocation = $(this).attr("href");
+		  var imageLocation = $(this).attr("href"); // "href" on the image refers to the location of the .gif file
 		 
 		  $image.attr("src", imageLocation); //Update overlay with the image linked in the link
 		  	  
@@ -42,18 +44,17 @@ if (mobile.matches) {
 
 	$(document).ready(function(){
 
-		$('.nav-hover').on('click', function(event){
-			console.log('menu btn test')
+		$('.nav-hover').on('click', function(event){	// Opens the nav menu for mobile
 			event.preventDefault();
 
-			$('.about-container').fadeOut();
-			$('.project-container').fadeOut();
-			$('.contact-container').fadeOut();
-			$('.nav-container').fadeIn();
-			$('.nav-container').css('position', 'fixed');
+			$('.about-container').fadeOut();		// hides about container
+			$('.project-container').fadeOut();		// hides project container
+			$('.contact-container').fadeOut();		// hides contact container
+			$('.nav-container').fadeIn();			// unhides the nav container
+			$('.nav-container').css('position', 'fixed'); //
 		});
 
-		$('#about').on('click', function(event){
+		$('#about').on('click', function(event){ // Hide all container except the about container
 
 			event.stopPropagation();
 			$('.nav-container').fadeOut();
@@ -61,7 +62,7 @@ if (mobile.matches) {
 			$('.about-container').fadeIn(2000);
 		})
 
-		$('#projects').on('click', function(event){
+		$('#projects').on('click', function(event){ // // Hide all container except the projects container
 
 			event.stopPropagation();
 			$('.nav-container').fadeOut();
@@ -69,7 +70,7 @@ if (mobile.matches) {
 			$('.project-container').fadeIn(2000);
 		})
 
-		$('#contacts').on('click', function(event){
+		$('#contacts').on('click', function(event){ // Hide all container except the contacts container
 
 			event.stopPropagation();
 			$('.nav-container').fadeOut();
@@ -77,9 +78,9 @@ if (mobile.matches) {
 			$('.contact-container').fadeIn(2000);
 		})
 
-		// bouncing hidden, when scroll reaches bottom
+		// bouncing hidden, when scroll reaches 10px more than screen height
 		$('.project-container').scroll(function() {
-			console.log($('.project-container').scrollTop() + $(window).height(), $('.project-container').height() + 10)
+
 		   if($('.project-container').scrollTop() + $(window).height() > $('.project-list').height() + 100) {
 		        $('.arrow-down').fadeOut(2000);
 		   } else {
@@ -87,15 +88,12 @@ if (mobile.matches) {
 		   }
 		});
 
-		$('.aside-nav').hover(function(){return})
-
+		// $('.aside-nav').hover(function(){return})
 
 	});
 
 
-
-
-} else {
+} else {	// Code for Desktop version layout
 
 
 
@@ -103,9 +101,9 @@ if (mobile.matches) {
 
 	$(document).ready(function(){
 
-		$('.about-container').fadeIn(2000);
+		$('.about-container').fadeIn(2000); // When entering site About container is shown first
 
-		setTimeout(function(){
+		setTimeout(function(){		// About me description loads by fading in from the right
 
 			$('.about-desc').css({'transform': 'none'}).animate({ opacity: 1 },{ queue: false, duration: 2000 });
 		}, 500);
