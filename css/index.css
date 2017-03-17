@@ -23,6 +23,18 @@ a:link, a:visited {
 	height: 100%;
 }
 
+.visuallyhidden { 
+	border: 0; 
+	clip: rect(0 0 0 0); 
+	height: 1px; 
+	margin: -1px; 
+	overflow: hidden; 
+	padding: 0; 
+	position: absolute; 
+	width: 1px; 
+}
+
+
 
 /**********
 Header
@@ -71,6 +83,30 @@ main {
 	position: absolute;
     bottom: 4px;
     right: 7%;
+}
+
+.h-mail {
+	position: absolute;
+    bottom: 4px;
+    right: 13%;
+    height: 30px;
+    width: 30px;
+}
+
+.h-linkedin {
+    position: absolute;
+    bottom: 4px;
+    right: 10%;
+    height: 30px;
+    width: 30px;
+}
+
+.h-github {
+    position: absolute;
+    bottom: 4px;
+    right: 7%;
+    height: 30px;
+    width: 30px;
 }
 
 /**********
