@@ -47,6 +47,7 @@
     "less": "^2.7.2",
     "less-loader": "^3.0.0",
     "less-plugin-clean-css": "^1.5.1",
+<<<<<<< HEAD
     "style-loader": "^0.13.2",
     "uglify-js": "^2.8.7",
     "webpack": "^2.2.1",
@@ -54,5 +55,8 @@
   },
   "dependencies": {
     "less": "^2.7.2"
+=======
+    "webpack": "^1.13.3"
+>>>>>>> gh-pages
   }
 }
