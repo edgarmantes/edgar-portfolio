@@ -34,6 +34,10 @@ a:link, a:visited {
 	width: 1px; 
 }
 
+blockquote {
+	line-height: 1.5;
+    font-style: italic;
+}
 
 
 /**********
@@ -83,6 +87,14 @@ main {
 	position: absolute;
     bottom: 4px;
     right: 7%;
+}
+
+.h-resume {
+	position: absolute;
+    bottom: 4px;
+    right: 16%;
+    height: 30px;
+    width: 30px;
 }
 
 .h-mail {
@@ -288,6 +300,20 @@ div.project-list {
 	font-weight: bolder;
 }
 
+.projects {
+	margin-bottom: 25px;
+}
+
+.desc-header,
+.projects,
+.contact-header{
+	color: rgb(7,36,159);
+}
+
+.black {
+	color: rgb(0,0,0)
+}
+
 .img-proj {
 	width: 140px;
 }
@@ -306,12 +332,23 @@ div.project-list {
 }
 
 .proj-desc {
-	line-height: 30px;
-    height: 160px;
+	line-height: 24px;
+    height: 195px;
     padding: 14px;
     font-size: 0.7vw;
 }
 
+.p-scrum {
+	padding-top: 27px;
+}
+
+.p-beer {
+	padding-top: 33px;
+}
+
+.p-log {
+	padding-top: 27px;
+}
 
 #overlay {
 	background:rgba(0,0,0,0.7);

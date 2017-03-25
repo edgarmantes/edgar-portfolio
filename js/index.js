@@ -224,20 +224,6 @@ if (mobile.matches) {
 			}
 		)
 
-				// Projects 
-		// $('.btn-info').on('click',
-		// 	function(){
-		// 		console.log('testing')
-		// 		$('.flip3D .front').addClass('transform', 'perspective( 600px ) rotateY( -180deg )')
-		// 	}
-		// )
-
-		// $('.btn-info').on('click',
-		// 	function(){
-		// 		$('.flip3D .back').addClass('transform', 'perspective( 600px ) rotateY( 0deg )')
-		// 	}
-		// )
-
 	})
 
 }
