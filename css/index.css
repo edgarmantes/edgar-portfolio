@@ -350,6 +350,14 @@ div.project-list {
 	padding-top: 27px;
 }
 
+.p-roles {
+	font-style: italic;
+}
+
+strong {
+	color: rgb(7,36,159);
+}
+
 #overlay {
 	background:rgba(0,0,0,0.7);
 	width:100%;
@@ -543,17 +551,30 @@ Contact page
     background-position: center;
 	}
 
+
+	.h-resume {
+		right: 23%;
+	}
+
+	.h-mail {
+		right: 17%;
+	}
+
+	.h-linkedin {
+		right: 12%;
+	}
+
 	.img-proj {
-		width: 140px;
+		width: 109px;
 	}
 
 
 	.img-timer {
-		width: 140px;
+		width: 109px;
 	}
 
 	.img-log {
-		width: 140px;
+		width: 109px;
 	}
 
 	.nav-hover {
@@ -590,11 +611,11 @@ Contact page
 	.proj-desc {
 		margin-top: 0;
 		line-height: 17px;
-		font-size: 12px;
+		font-size: 9px;
 	}
 
 	div.project-list {
-		padding-top: 21vw;
+		padding-top: 16vw;
 	}
 
 	.img-proj {
@@ -611,6 +632,20 @@ Contact page
 	    background: -moz-linear-gradient(rgba(255,255,255,1),rgba(255,256,255,1),rgba(255,255,255,1), rgba(255,255,255,1),rgba(255,255,255,1),rgba(255,255,255,0.6),rgba(255,255,255,0.2), transparent);
 	    background: linear-gradient(rgba(255,255,255,1),rgba(255,256,255,1),rgba(255,255,255,1), rgba(255,255,255,1),rgba(255,255,255,1),rgba(255,255,255,0.6),rgba(255,255,255,0.2), transparent);
 	}
+
+	.p-scrum {
+		padding-top: 21px;
+	}
+
+	.p-beer {
+		padding-top: 30px;
+	}
+
+	.p-log {
+		padding-top: 25px;
+	}
+
+
 
 }
 
@@ -727,7 +762,9 @@ Contact page
 	}
 
 	.about-par {
-		line-height: 1.2;
+		/*line-height: 1.2;*/
+		line-height: 2.2;
+    	font-weight: bold;
 	}
 
 	.img-me {
@@ -747,6 +784,7 @@ Contact page
 	.proj-header {
 		display: block;
 		height: 55%;
+		margin-bottom: 20px;
 	}
 
 	.project-container {
@@ -808,7 +846,7 @@ Contact page
 	.arrow {
 	    position: fixed;
 	    bottom: 0;
-	    left: 40vw;
+	    left: 36vw;
 	}
 
 	.bounce {
@@ -911,4 +949,17 @@ Contact page
 	.cont {
 		font-size: 20px;
 	}
+}
+
+
+@media only screen and (max-width: 700px) {
+	.about-par {
+		line-height: 1.7;
+    	font-size: 15px;
+	}
+
+	.about-desc {
+		top: 5%;
+	}
+
 }
