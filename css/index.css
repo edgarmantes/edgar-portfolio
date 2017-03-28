@@ -34,10 +34,6 @@ a:link, a:visited {
 	width: 1px; 
 }
 
-blockquote {
-	line-height: 1.5;
-    font-style: italic;
-}
 
 
 /**********
@@ -237,14 +233,21 @@ About Me page
     box-shadow: inset 0px 0px 6px rgba(0,0,0,0.2)
 }
 
-.about-par {
-	line-height: 30px;
+.about-par,
+.about-quote {
+	line-height: 2em;
+	margin-bottom: 30px;
+}
+
+.about-quote span {
+	display: block;
+    font-style: italic;
 }
 
 .description {
     position: absolute;
     left: 6%;
-    top: 33%;
+    top: 20%;
     width: 30%;
     opacity: 0;
     transform: translate(530px, 0px);
@@ -601,6 +604,9 @@ Contact page
 		transform: unset;
 	}
 
+	.about-quote {
+		line-height: 1.4em;
+	}
 
 
 	/*Projects Page*/
