@@ -55,7 +55,7 @@ if (mobile.matches) {
 		});
 
 		$('#about').on('click', function(event){ // Hide all container except the about container
-
+			event.preventDefault();
 			event.stopPropagation();
 			$('.nav-container').fadeOut();
 			$('.project-container').fadeOut();
@@ -63,7 +63,7 @@ if (mobile.matches) {
 		})
 
 		$('#projects').on('click', function(event){ // // Hide all container except the projects container
-
+			event.preventDefault();
 			event.stopPropagation();
 			$('.nav-container').fadeOut();
 			$('.about-container').fadeOut();
@@ -71,7 +71,7 @@ if (mobile.matches) {
 		})
 
 		$('#contacts').on('click', function(event){ // Hide all container except the contacts container
-
+			event.preventDefault();
 			event.stopPropagation();
 			$('.nav-container').fadeOut();
 			$('.about-container').fadeOut();

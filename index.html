@@ -20,9 +20,10 @@
 			<img class="icon-img" src="./images/edgarEM1.png">
 		</div>
 		<div class="contact-icons container">
-			<a class="h-mail" href="mailto:edgar.mantes11@gmail.com"><img class="contact-email" src="./images/email.png"><p class="visuallyhidden">email</p></a>
-			<a class="h-linkedin" href="https://www.linkedin.com/in/edgar-mantes-8a28bb96/" target="_blank"><img class="contact-linkedin" src="./images/linked.png"><p class="visuallyhidden">linked in</p></a>
-			<a class="h-github" href="https://github.com/shootermantes" target="_blank"><img class="contact-github" src="./images/github2.png"><p class="visuallyhidden">github repo</p></a>
+			<a class="h-resume" href="https://www.dropbox.com/s/i5pzfzbazg05hm2/ResumeWebDev-2017%20%284%29.pdf?dl=0" target="_blank"><img class="contact-resume" src="./images/resume.png" alt="resume-link"><p class="visuallyhidden">resume</p></a>
+			<a class="h-mail" href="mailto:edgar.mantes11@gmail.com"><img class="contact-email" src="./images/email.png" alt="email-link"><p class="visuallyhidden">email</p></a>
+			<a class="h-linkedin" href="https://www.linkedin.com/in/edgar-mantes-8a28bb96/" target="_blank"><img class="contact-linkedin" src="./images/linked.png" alt="linkedIn-link"><p class="visuallyhidden">linked in</p></a>
+			<a class="h-github" href="https://github.com/shootermantes" target="_blank"><img class="contact-github" src="./images/github2.png" alt="github-link"><p class="visuallyhidden">github repo</p></a>
 		</div>
 	</header>
 	<main>
@@ -34,9 +35,9 @@
 					<nav class="aside-nav">
 						<ul class="nav-list">
 							<li class="navlist side-icon"><img class="img-side" src="./images/edgarEM1.png"><p class="visuallyhidden">Edgar Mantes icon</p></li>
-							<li class="navlist" id="about"><a href="#" onClick="unhide(this);">01   &nbsp; About Me</a><p class="visuallyhidden">about me</p></li>
-							<li class="navlist" id="projects"><a href="#" onClick="unhide(this);">02   &nbsp; Projects</a><p class="visuallyhidden">List of projects</p></li>
-							<li class="navlist" id="contacts"><a href="#" onClick="unhide();">03   &nbsp; Contacts</a><p class="visuallyhidden">contact page</p></li>
+							<li class="navlist" id="about"><a href="">01   &nbsp; About Me</a><p class="visuallyhidden">about me</p></li>
+							<li class="navlist" id="projects"><a href="">02   &nbsp; Projects</a><p class="visuallyhidden">List of projects</p></li>
+							<li class="navlist" id="contacts"><a href="">03   &nbsp; Contacts</a><p class="visuallyhidden">contact page</p></li>
 						</ul>
 					</nav>
 				</div>
@@ -47,12 +48,11 @@
 			<div class="filter">
 				<div class="description about-desc">
 					<img class="img-me hidden" src="./images/img-me.png" alt="Edgar Mantes - about me" >
-					<h2 class="desc-header">About Me</h2>
-					<p class="about-par">I am a web developer who is into health and fitness, professional basketball and appreciate the creativity and inovation. I believe life is too short so one must never sit back and watch but rather live, learn. There is a lot to experience with so little time, so never stop learning</p></br>
+					<h2 class="desc-header"><span class="black">[01]</span> About Me</h2>
+					<p class="about-par">I am a full-stack web developer who loves to code in Javascript. Well versed in the MERN stack environment, and still continue learning new things everyday. I believe life is too short, so one must never sit back and watch but rather live, and learn. There is a lot to experience with so little time, so never stop learning. I'm into health and fitness, professional basketball and appreciate creativity and innovation. </p>
 
-					<blockquote>“Failure is an option. If things are not failing, </br>  you are not innovating enough.” </blockquote><strong>– Elon Musk</strong>
-
-					</p>
+					<p class="about-quote">
+					<span>“Failure is an option. If things are not failing, you are not innovating enough.” </span><strong>– Elon Musk</strong></p>
 				</div>
 				
 			</div>
@@ -60,16 +60,19 @@
 
 		<div class="project-container hidden">
 			<div class="project-list col-12">
-				<div class="proj-header hidden">
-					<h1 class="projects">Projects</h1>
-					<div id="bounce" class="arrow-down arrow animated bounce">
+				<div class="proj-header">
+					<h1 class="projects"><span class="black">[02]</span> Projects</h1>
+					<div id="bounce" class="arrow-down arrow animated bounce hidden">
 						<img class="arrowing" src="./images/arrow-down.png" alt="scroll down">
 					</div>
 				</div>
 				<div class="position project-wrapper project-desc scrum col-3">
 					<div class="flip3D proj-scrum">
 						<div class="back">
-							<p class="proj-desc">Get organized and be more productive using the Scrum-mage app. Get to work on this Scrum framework.</p>
+							<p class="proj-desc p-scrum">Get organized and be more productive using the Scrum-mage app. Get to work on this Scrum framework.</br>
+							<span class="p-roles"><strong>Role:</strong> Designer/Coder</br>
+							<strong>Tech:</strong> React/Redux/Node/Passport/</br>MongoDB/Mongoose</span>
+							</p>
 						</div>
 						<div class="front">
 							<img class="img-proj img-scrum" src="./images/scrum2.png" alt="Scrum-mage" alt="scrum-mage">
@@ -86,7 +89,10 @@
 				<div class="position project-wrapper project-desc beer col-3">
 					<div class="flip3D proj-scrum">
 						<div class="back">
-							<p class="proj-desc">Check out the breweries around you and your friends. Don't miss out on one sip</p>
+							<p class="proj-desc p-beer">Check out the breweries around you and your friends. Don't miss out on one sip.</br>
+							<span class="p-roles"><strong>Role:</strong> Designer/Coder</br>
+							<strong>Tech:</strong> ES6/Webpack/LESS/Babel
+							</span></p>
 						</div>
 						<div class="front">
 							<img class="img-proj map" src="./images/pub_beer-5122.png" alt="Map My Beer" alt="Map my beer app">
@@ -103,7 +109,10 @@
 				<div class="position project-wrapper project-desc timer col-3">
 					<div class="flip3D proj-scrum">
 						<div class="back">
-							<p class="proj-desc">Track how long it takes for you to complete your project work flow. No more guessing, track your time using this app</p>
+							<p class="proj-desc p-timer">Track how long it takes for you to complete your project. No more guessing, track your time using this app.</br>
+							<span class="p-roles"><strong>Role:</strong> Designer/Coder</br>
+							<strong>Tech:</strong> React/Redux/Node/Passport/</br>MongoDB/Mongoose</span>
+							</p>
 						</div>
 						<div class="front">
 							<img class="img-proj img-timer" src="./images/TimeTracker2.png" alt="Time Tracker" alt="time tracker app">
@@ -120,7 +129,9 @@
 				<div class="position project-wrapper project-desc log col-3">
 					<div class="flip3D proj-scrum">
 						<div class="back">
-							<p class="proj-desc">Get your team organized and keep the communcation clear within the team. LogRoom will help you do exactly that.</p>
+							<p class="proj-desc p-log">Get your team organized and keep the communcation clear within the team. LogRoom will help you do exactly that.</br>
+							<span class="p-roles"><strong>Role:</strong> Designer/Coder</br>
+							<strong>Tech:</strong> jQuery/Mocha/Chia/</br>MongoDB/Mongoose</span></p>
 						</div>
 						<div class="front">
 							<img class="img-proj img-log" src="./images/LogRoom2.png" alt="log room app">
@@ -140,7 +151,7 @@
 			<div class="contact-filter">
 				<div class="contact-wrapper">
 					<div class="contacts">
-						<h1 class="contact-header"> Contact Me </h1>
+						<h1 class="contact-header"><span class="black">[03]</span> Contact Me </h1>
 						<a href="tel:312-937-1641"><div class="contact-type">
 							<img  class="contact-img" src="./images/mobile-phone-8-32.png" alt="cell phone number"> 
 							<div class="contact-desc">
@@ -149,7 +160,7 @@
 							</div>
 							<p class="visuallyhidden">phone number</p>
 						</div></a>
-						<a href="mailto:edgar.mantes@gmail.com"><div class="contact-type">
+						<a href="mailto:edgar.mantes11@gmail.com"><div class="contact-type">
 							<img class="contact-img" src="./images/email-10-32.png" alt="email">
 							<div class="contact-desc">
 								<h3 class="cont">email</h3>
