@@ -23,7 +23,8 @@ var $caption = $("<p></p>");
 		  var imageLocation = $(this).attr("href"); // "href" on the image refers to the location of the .gif file
 		 
 		  $image.attr("src", imageLocation); //Update overlay with the image linked in the link
-		  	  
+		  $image.attr("class", "gif-image")
+
 		  $overlay.fadeIn(1000); //Show the overlay.
 		  
 		  var captionText = $(this).children("img").attr("alt"); //Get child's alt attribute and set caption
@@ -87,8 +88,6 @@ if (mobile.matches) {
 		   		$('.arrow-down').fadeIn(2000);
 		   }
 		});
-
-		// $('.aside-nav').hover(function(){return})
 
 	});
 
@@ -209,20 +208,25 @@ if (mobile.matches) {
 
 
 
-		$('.nav-hover').hover(
+		$('.menu-icon').on('click', function(e){
+			e.preventDefault();
 
-			function(){
-				var navMove = $('.nav-container')
+			var navMove = $('.nav-container')
+			TweenLite.to(navMove, 2.5, { ease: Power4.easeOut, x: -215 });
 
-				TweenLite.to(navMove, 2.5, { ease: Power4.easeOut, x: -215 });
-			},
+			// function(){
+			// 	var navMove = $('.nav-container')
 
-			function(){
-				var navMove = $('.nav-container')
+			// 	TweenLite.to(navMove, 2.5, { ease: Power4.easeOut, x: -215 });
 
-				TweenLite.to(navMove, 2.5, { ease: Power4.easeOut, x: 0 });
-			}
-		)
+			// };
+
+			// function(){
+			// 	var navMove = $('.nav-container')
+
+			// 	TweenLite.to(navMove, 2.5, { ease: Power4.easeOut, x: 0 });
+			// }
+		})
 
 				// Projects 
 		// $('.btn-info').on('click',
