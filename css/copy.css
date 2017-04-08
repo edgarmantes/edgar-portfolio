@@ -131,17 +131,6 @@ Nav
     z-index: 10;
 }
 
-.menu-icon {
-    display: inline-block;
-    position: absolute;
-    right: 2%;
-    top: 47%;
-}
-
-.menu-icon:hover {
-	cursor: pointer;
-}
-
 .nav-margin {
 	background-color: rgba(0,0,0,0.2);
 	width: 250px;
@@ -152,7 +141,7 @@ Nav
 	background-color: rgba(0, 0, 0, 0.4);
 	width: 250px;
 	position: absolute;
-	right: -250px;
+	right: -218px;
 	top: 0;
 	bottom: 0;
 	color: white;
@@ -392,7 +381,6 @@ strong {
 	color:white; 
 }
 
-
 /* end - overlay*/
 
 /*flip card*/
@@ -554,21 +542,18 @@ Contact page
 
 	/*Nav */
 	.menu-btn {
-	    display: inline-block;
-	    position: absolute;
-	    height: 60px;
-	    width: 60px;
-	    right: 12px;
-	    top: 12px;
-	    background-color: rgba(255,255,255,0.2);
-	    background-image: url(../images/menu.png);
-	    background-repeat: no-repeat;
-	    background-position: center;
+    display: inline-block;
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    right: 12px;
+    top: 12px;
+    background-color: rgba(255,255,255,0.2);
+    background-image: url(../images/menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
 	}
 
-	.menu-icon {
-		display: none;
-	}
 
 	.h-resume {
 		right: 23%;
@@ -834,7 +819,7 @@ Contact page
 	}
 
 	.proj-desc {
-		font-size: 16px;
+		font-size: 20px;
 		line-height: 1.5;
 	}
 
@@ -845,7 +830,7 @@ Contact page
 	}
 
 	#overlay img {
-	    margin-top: 31vh;
+	    margin-top: 25%;
 	    min-width: 80%;
 	}
 
